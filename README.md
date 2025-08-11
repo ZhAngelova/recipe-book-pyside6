@@ -17,8 +17,8 @@ This app allows users to add, edit, delete, and view recipes with optional image
 ---
 
 ## 📂 Project Structure
-
-recipe_book_app/
+```
+ recipe_book_app/
 │
 ├── controller/
 │ └── recipe_controller.py # Handles user actions, talks to Model, updates View
@@ -36,10 +36,11 @@ recipe_book_app/
 │ ├── main_window.png
 │ └── edit_mode.png
 |
-├──.gitignore│
+├── .gitignore
 ├── recipes.db # SQLite database file
 ├── main.py # Entry point: wires Model, View, Controller together
 └── README.md # Project documentation
+```
 
 ---
 
@@ -54,67 +55,78 @@ recipe_book_app/
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repository
+## 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/recipe-book-pyside6.git
+git clone https://github.com/ZhAngelova/recipe-book-pyside6.git
 cd recipe-book-pyside6
-2️⃣ Create a Virtual Environment
-bash
+```
+## 2️⃣ Create a Virtual Environment
+```bash
 python -m venv .venv
+```
 Activate it:
 
 Windows (PowerShell):
 
-powershell
+```powershell
 .venv\Scripts\Activate.ps1
+```
 MacOS/Linux:
 
-bash
+```bash
 source .venv/bin/activate
-3️⃣ Install Dependencies
-bash
+```
+## 3️⃣ Install Dependencies
+```bash
 pip install PySide6
-4️⃣ Run the Application
-bash
+```
+## 4️⃣ Run the Application
+```bash
 python main.py
-📚 How It Works (MVC Overview)
-Model (model/)
+```
+## 📚 How It Works (MVC Overview)
+Model (`model/`)
 Manages application data and business logic. Talks directly to the database.
 
-View (view/)
+View (`view/`)
 Handles all GUI elements (buttons, forms, lists). Knows nothing about the database.
 
-Controller (controller/)
+Controller (`controller/`)
 The bridge between View and Model. Responds to user actions, updates Model, refreshes View.
 
 Example flow:
 User clicks "Add Recipe" → Controller reads form from View → Controller calls Model.add_recipe() → Model updates Database → Controller refreshes View
 
-📸 Screenshots
-Main Window
+## 📸 Screenshots
 
-The main Recipe Book window showing the list of stored recipes and a selected recipe in view mode.
+**Main Window**
 
-Edit Mode
+![Main Window](images/main_window.png)
 
-The edit mode view where you can update the title, ingredients, instructions, and image of an existing recipe.
+**Editing a Recipe**
 
-💡 Learning Goals
-This project is designed for:
+![Edit Mode](images/edit_mode.png)
 
-Beginners learning PySide6
 
-Developers practicing MVC design pattern in Python
+## 🎯 Who This Project Is For
 
-Anyone building desktop CRUD apps with images and persistent storage
+- 🆕 **Beginners** learning PySide6 and desktop GUI development.  
+- 🛠 **Developers** practicing the Model–View–Controller (MVC) design pattern in Python.  
+- 📦 Anyone wanting to build a **desktop CRUD app** with images and persistent storage.  
+- 📚 Students looking for a clean, well-commented example for **portfolio projects**.
 
-📝 License
+
+## 📝 License
 MIT License — free to use and modify.
 
-👨‍💻 Author
-Zhasmina Angelova
-📧 zhasminangelova@gmail.com
-🔗 www.linkedin.com/in/zhasmina-angelova | https://github.com/ZhAngelova
+## 👨‍💻 Author
+**Zhasmina Angelova**  
+📧 zhasminangelova@gmail.com  
+💼 [https://www.linkedin.com/in/zhasmina-angelova](https://www.linkedin.com/in/zhasmina-angelova)  
+🐙 [https://github.com/ZhAngelova](https://github.com/ZhAngelova)
+
+
+
 
 
 
